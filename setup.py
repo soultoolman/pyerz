@@ -7,12 +7,12 @@ from setuptools import setup, find_packages
 
 # Package meta-data.
 NAME = 'pyerz'
-DESCRIPTION = 'a Python library of easyRuanZhu'
-URL = 'http://gitee.com/gaptech/pyerz'
+DESCRIPTION = '易软著Python库'
+URL = ''
 EMAIL = 'lixing@gaptech.cn'
 AUTHOR = 'lixing'
 REQUIRES_PYTHON = '>=3.6.0'
-VERSION = '1.0.0'
+VERSION = '1.0.1'
 
 # What packages are required for this module to be executed?
 REQUIRED = [
@@ -30,6 +30,12 @@ EXTRAS = {
 CONSOLE_SCRIPTS = [
     'pyerz=pyerz.pyerz:main'
 ]
+
+
+# package data
+PACKAGE_DATA = {
+    'pyerz': ['template.docx']
+}
 
 # The rest you shouldn't have to touch too much :)
 # ------------------------------------------------
@@ -69,6 +75,7 @@ setup(
     url=URL,
     # If your package is a single module, use this instead of 'packages':
     packages=find_packages(),
+    package_data=PACKAGE_DATA,
 
     entry_points={
         'console_scripts': CONSOLE_SCRIPTS
