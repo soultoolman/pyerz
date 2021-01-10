@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+import codecs
 import logging
 import pkg_resources
 from os.path import abspath
@@ -164,7 +165,7 @@ class CodeWriter(object):
         """
         把单个文件添加到程序文档里面
         """
-        with open(file) as fp:
+        with codecs.open(file, encoding='utf-8') as fp:
             for line in fp:
                 line = line.rstrip()
                 if self.is_blank_line(line):

@@ -9,10 +9,10 @@ from setuptools import setup, find_packages
 NAME = 'pyerz'
 DESCRIPTION = '易软著Python库'
 URL = ''
-EMAIL = 'lixing@gaptech.cn'
-AUTHOR = 'lixing'
+EMAIL = 'soultoolman@gmail.com'
+AUTHOR = 'soultoolman'
 REQUIRES_PYTHON = '>=3.6.0'
-VERSION = '1.0.1'
+VERSION = '1.0.2'
 
 # What packages are required for this module to be executed?
 REQUIRED = [
